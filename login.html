@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CityLine</title>
+<meta name="description" content="My Store" />
+<link rel="stylesheet" type="text/css" href="stylesheet/960.css" media="all" />
+<link rel="stylesheet" type="text/css" href="stylesheet/screen.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheet/color.css" media="screen" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="stylesheet/ie.css" media="screen" />
+<![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/shoppica.js"></script>
+
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+	jQuery.validator.setDefaults({
+			errorElement: "p",
+			errorClass: "s_error_msg",
+			errorPlacement: function(error, element) {
+					error.insertAfter(element);
+			},
+			highlight: function(element, errorClass, validClass) {
+					$(element).addClass("error_element").removeClass(validClass);
+					$(element).parent("div").addClass("s_error_row");
+			},
+			unhighlight: function(element, errorClass, validClass) {
+					$(element).removeClass("error_element").addClass(validClass);
+					$(element).parent("div").removeClass("s_error_row");
+			}
+	});
+	$("#login").validate();
+
+});
+</script>
+
+
+</head>
+
+<body class="s_layout_fixed">
+
+<div id="wrapper"> 
+  
+  <!-- ********************** --> 
+  <!--      H E A D E R       --> 
+  <!-- ********************** -->
+  <div id="header" class="container_12">
+    <div class="grid_12">
+    
+      <a id="site_logo" href="index.html">Shoppica store - Premium e-Commerce Theme</a> 
+
+      <div id="system_navigation" class="s_nav">
+        <ul class="s_list_1 clearfix">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="login.html">Авторизация</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="contacts.html">Контакт</a></li>
+        </ul>
+      </div>
+
+      <div id="site_search">
+        <a id="show_search" href="javascript:;" title="Search:"></a>
+        <div id="search_bar" class="clearfix">
+          <input type="text" id="filter_keyword" />
+          <select id="filter_category_id">
+            <option value="0">Все категории</option>
+            <option value="1">Электроника</option>
+            <option value="2">Компьютеры</option>
+            <option value="3">Товары для геймеров</option>
+          </select>
+          <a class="s_button_1 s_secondary_color_bgr"><span class="s_text">Поиск</span></a> <a class="s_advanced s_main_color" href="">Advanced Search</a>
+        </div>
+      </div>
+      
+      <div id="language_switcher" class="s_switcher"> <span class="s_selected">RUB</span>
+        <ul class="s_options">
+          <li><a href="">Euro</a></li>
+          <li><a href="">US Dollar</a></li>
+        </ul>
+      </div>
+      
+      <div id="currency_switcher" class="s_switcher"> <span class="s_selected"><img src="images/flags/rs.png" alt="Россия" /> Россия</span>
+        <ul class="s_options">
+          <li><a href=""><img src="images/flags/rs.png" alt="Россия" /> Россия</a></li>
+          <li><a href=""><img src="images/flags/gb.png" alt="English" /> English</a></li>
+        </ul>
+      </div>
+      
+      <div id="categories" class="s_nav">
+        <ul>
+          <li id="menu_home"> <a href="index.html">Главная</a> </li>
+          <li> <a href="listing_1.html" >Электроника</a>
+            <div class="s_submenu">
+              <h3 >Домашняя электроника</h3>
+              <ul class="s_list_1 clearfix">
+                <li> <a href="listing_1.html">Цифровые камеры</a>
+                  <ul class="s_list_1 clearfix">
+                    <li><a href="listing_1.html">Компактные камеры</a></li>
+                    <li><a href="listing_1.html">Цифровые SLR</a></li>
+                  </ul>
+                </li>
+                <li><a href="listing_1.html">Колонки</a></li>
+                <li><a href="listing_1.html">Домашний кинотеатр</a></li>
+                <li><a href="listing_1.html">MP3 плееры</a></li>
+                <li><a href="listing_1.html">Авто-колонки</a></li>
+              </ul>
+              <span class="clear border_eee"></span
+          </li>
+          <li> <a href="listing_1.html">Компьютеры</a>
+            <div class="s_submenu">
+              <h3>Компьютеры</h3>
+              <ul class="s_list_1 clearfix">
+                <li><a href="listing_1.html">Настольные ПК</a></li>
+                <li><a href="listing_1.html">Ноутбуки</a></li>
+                <li><a href="listing_1.html">Мониторы</a></li>
+                <li><a href="listing_1.html">Комплектующие</a></li>
+                <li><a href="listing_1.html">Программы</a></li>
+              </ul>
+              <span class="clear border_eee"></span>
+              <h3>ПК брэнды</h3>
+              <ul class="s_list_1 clearfix">
+                <li><a href="listing_1.html">Hyper PC</a></li>
+                <li><a href="listing_1.html">Aorus</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="listing_1.html">Товары для геймеров</a>
+            <div class="s_submenu">
+              <h3>Консоли</h3>
+              <ul class="s_list_1 clearfix">
+                <li><a href="listing_1.html">Столы</a></li>
+                <li><a href="listing_1.html">Акссесуары</a></li>
+                <li><a href="listing_1.html">Перифирия</a></li>
+                <li><a href="listing_1.html">Кресла</a></li>
+              </ul>
+              <span class="clear border_eee"></span>
+              <h3>Брэнды</h3>
+              <ul class="s_list_1 clearfix">
+                <li><a href="listing_1.html">Playstation</a></li>
+                <li><a href="listing_1.html">Xbox</a></li>
+                <li><a href="listing_1.html">Razer</a></li>
+                <li><a href="listing_1.html">Nvidia</a></li>
+                <li><a href="listing_1.html">AMD</a></li>
+              </ul>
+            </div>
+          </li>
+          
+      </div>
+      <div id="cart_menu" class="s_nav">
+        <a href="cart.html"><span class="s_icon"></span> <small class="s_text">Корзина</small><span class="s_grand_total s_main_color">₽0.00</span></a>
+        <div class="s_submenu s_cart_holder">
+          <p class="s_mb_0">0 items</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- end of header --> 
+  
+
+  <!-- ********************** --> 
+  <!--     I N T R O          -->
+  <!-- ********************** --> 
+  <div id="intro">
+    <div id="intro_wrap">
+      <div class="container_12">
+        <div id="breadcrumbs" class="grid_12">
+          <a href="index.html">Главная</a>
+           &gt; <a href="cart.html">Корзина</a>
+        </div>
+        <h1>Мой аккаунт</h1>
+      </div>
+    </div>
+  </div>
+  <!-- end of intro -->
+  
+  
+  <!-- ********************** --> 
+  <!--      C O N T E N T     --> 
+  <!-- ********************** --> 
+  <div id="content" class="container_16">
+  
+
+    <div id="login_page" class="grid_16">
+            
+      <div class="grid_8 alpha">
+        <h2 class="s_title_1"><span class="s_secondary_color">Я </span>новый покупатель.</h2>
+        <div class="clear"></div>
+        <form id="account" action="#">
+          <div class="s_row_3 clearfix">
+            <p>Настройки:</p>
+            <label class="s_radio" for="register">
+              <input type="radio" id="register" checked="checked" />
+              <strong>Регистрация аккаунта</strong>
+            </label>
+            <label for="guest">
+              <input type="radio" id="guest" />
+              <strong>Гостевой аккаунт</strong>
+            </label>
+            <br />
+            <p>Создав учетную запись, вы сможете совершать покупки быстрее, быть в курсе состояния заказа и отслеживать ранее сделанные заказы.</p>
+
+          </div>
+          <span class="clear border_ddd"></span>
+          <br />
+          <button class="s_button_1 s_main_color_bgr" type="submit"><span class="s_text">Продолжить</span></button>
+        </form>
+      </div>
+
+      <div class="grid_8 omega">
+        <h2 class="s_title_1"><span class="s_secondary_color">Я</span> зарегистрированный покупатель</h2>
+
+        <div class="clear"></div>
+        <form id="login" action="orders.html" method="post">
+          <div class="s_row_3 clearfix">
+            
+            <br />
+            <label><strong>E-Mail адрес:</strong></label>
+            <input type="text" size="35" class="required email" />
+            <br />
+            <br />
+            <label><strong>Пароль:</strong></label>
+            <input type="password" size="35" class="required" />
+            <br />
+          </div>
+          <span class="clear border_ddd"></span>
+          <br />
+          <div class="s_nav s_size_2 left">
+            <ul class="clearfix">
+              <li><a href="#">Забыл пароль</a></li>
+            </ul>
+          </div>
+          <button class="s_button_1 s_main_color_bgr" type="submit"><span class="s_text">Войти</span></button>
+        </form>
+      </div>
+
+      <div class="clear"></div>
+
+    </div>
+    
+  </div>
+  <!-- end of content --> 
+  
+  <!-- ********************** --> 
+  <!--   S H O P   I N F O    --> 
+  <!-- ********************** --> 
+  <div id="shop_info">
+    <div id="shop_info_wrap">
+      <div class="container_12">
+        <div id="shop_description" class="grid_3">
+          <h2>О магазине</h2>
+          <p>Наш магазин предоставляет вам самые лучшие товары по самым выгодным ценам. Ждём вас! </p>
+        </div>
+        <div id="shop_contacts" class="grid_3">
+          <h2>О нас</h2>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_phone_32"></span>863512200808 <br /></span></td>
+            </tr>
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_fax_32"></span>863512200808 <br /></span></td>
+            </tr>
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_mail_32"></span>CityLine@gmail.com</span></td>
+            </tr>
+            
+          </table>
+        </div>
+        <div id="VK" class="grid_3">
+          <h2>VK</h2>
+          <ul id="twitter_update_list">
+            <li>
+            
+          </li>
+        </ul>
+          <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script> 
+          <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/themeburn.json?callback=twitterCallback2&amp;count=2"></script> 
+        </div>
+        <div id="facebook" class="grid_3">
+          <h2>Instagram</h2>
+          <div class="s_widget_holder">
+            <fb:fan profileid="111188056908" stream="0" connections="6" logobar="0" width="220" css="http://svest.no-ip.org/test/opencart/catalog/view/theme/shoppica/stylesheet/facebook.css.php?300"></fb:fan>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end of shop info --> 
+
+
+  <!-- ********************** --> 
+  <!--      F O O T E R       --> 
+  <!-- ********************** --> 
+  <div id="footer" class="container_12">  </div>
+    
+      
+   
+    <div id="payments" class="right clearfix">
+      <img src="images/payments/discover_straight_32px.png" alt="" />
+      <img src="images/payments/american_express_straight_32px.png" alt="" />
+      <img src="images/payments/moneybookers_straight_32px.png" alt="" />
+      <img src="images/payments/paypal_straight_32px.png" alt="" />
+      <img src="images/payments/visa_straight_32px.png" alt="" />
+      <img src="images/payments/american_express_straight_32px.png" alt="" />
+   </div>
+
+  <!-- end of FOOTER --> 
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+  window.fbAsyncInit = function() {
+    FB.init({appId: '0c18007de6f00f7ecda8c040fb76cd90', status: true, cookie: true,
+     xfbml: true});
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+    '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru" xml:lang="ru" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CityLine</title>
+<meta name="description" content="My Store" />
+<link rel="stylesheet" type="text/css" href="stylesheet/960.css" media="all" />
+<link rel="stylesheet" type="text/css" href="stylesheet/screen.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheet/color.css" media="screen" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="stylesheet/ie.css" media="screen" />
+<![endif]-->
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/shoppica.js"></script>
+<script type="text/javascript">
+$(document).ready(function()  {
+    if (window.PIE) {
+        $('.rounded').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+<script type="text/javascript">
+$(function() {
+	$("#checkout form").accordion({
+		autoHeight: false
+	});
+});
+</script>
+
+</head>
+
+<body class="s_layout_fixed">
+
+
+<div id="wrapper"> 
+  
+  <!-- ********************** --> 
+  <!--      H E A D E R       --> 
+  <!-- ********************** -->
+  <div id="header" class="container_12">
+    <div class="grid_12">
+    
+      <a id="site_logo" href="index.html"></a> 
+
+      <div id="system_navigation" class="s_nav">
+        <ul class="s_list_1 clearfix">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="login.html">Авторизация</a></li>
+          <li><a href="cart.html">Корзина</a></li>
+          <li><a href="contacts.html">Контакт</a></li>
+        </ul>
+      </div>
+
+      <div id="site_search">
+        <a id="show_search" href="javascript:;" title="Search:"></a>
+        <div id="search_bar" class="clearfix">
+          <input type="text" id="filter_keyword" />
+          <select id="filter_category_id">
+            <option value="0">Все категории</option>
+            <option value="1">Электроника</option>
+            <option value="2">Компьютеры</option>
+            <option value="3">Товары для геймеров</option>
+          </select>
+          <a class="s_button_1 s_secondary_color_bgr"><span class="s_text">Поиск</span></a> <a class="s_advanced s_main_color" href="">Advanced Search</a>
+        </div>
+      </div>
+      
+      <div id="language_switcher" class="s_switcher"> <span class="s_selected">RUB</span>
+        <ul class="s_options">
+          <li><a href="">Euro</a></li>
+          <li><a href="">US Dollar</a></li>
+        </ul>
+      </div>
+      
+      <div id="currency_switcher" class="s_switcher"> <span class="s_selected"><img src="images/flags/rs.png" alt="Россия" /> Россия</span>
+        <ul class="s_options">
+          <li><a href=""><img src="images/flags/rs.png" alt="Россия" /> Россия</a></li>
+          <li><a href=""><img src="images/flags/gb.png" alt="English" /> English</a></li>
+        </ul>
+      </div>
+      
+      <div id="categories" class="s_nav">
+        <ul>
+          <li id="menu_home"> <a href="index.html">Главная</a> </li>
+          <li> <a href="listing_1.html" >Электроника</a>
+            <div class="s_submenu">
+              <h3 >Домашняя электроника</h3>
+              <ul class="s_list_1 clearfix">
+                <li> <a href="listing_1.html">Цифровые камеры</a>
+                  <ul class="s_list_1 clearfix">
+                    <li><a href="listing_1.html">Компактные камеры</a></li>
+                    <li><a href="listing_1.html">Цифровые SLR</a></li>
+                  </ul>
+                </li>
+                <li><a href="listing_1.html">Колонки</a></li>
+                <li><a href="listing_1.html">Домашний кинотеатр</a></li>
+                <li><a href="listing_1.html">MP3 плееры</a></li>
+                <li><a href="listing_1.html">Авто-колонки</a></li>
+              </ul>
+              <span class="clear border_eee"></span>
+          </li>
+          <li> <a href="listing_1.html">Компьютеры</a>
+            <div class="s_submenu">
+              <h3>Компьютеры</h3>
+              <ul class="s_list_1 clearfix">
+                <li><a href="listing_1.html">Настольные ПК</a></li>
+                <li><a href="listing_1.html">Ноутбуки</a></li>
+                <li><a href="listing_1.html">Мониторы</a></li>
+                <li><a href="listing_1.html">Комплектующие</a></li>
+                <li><a href="listing_1.html">Программы</a></li>
+              </ul>
+              <span class="clear border_eee"></span>
+              <h3>ПК брэнды</h3>
+              <ul class="s_list_1 clearfix">
+                <li><a href="listing_1.html">Hyper PC</a></li>
+                <li><a href="listing_1.html">Aorus</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="listing_1.html">Товары для геймеров</a>
+            <div class="s_submenu">
+              <h3>Консоли</h3>
+              <ul class="s_list_1 clearfix">
+                <li><a href="listing_1.html">Столы</a></li>
+                <li><a href="listing_1.html">Акссесуары</a></li>
+                <li><a href="listing_1.html">Перифирия</a></li>
+                <li><a href="listing_1.html">Кресла</a></li>
+              </ul>
+              <span class="clear border_eee"></span>
+              <h3>Брэнды</h3>
+              <ul class="s_list_1 clearfix">
+                <li><a href="listing_1.html">Playstation</a></li>
+                <li><a href="listing_1.html">Xbox</a></li>
+                <li><a href="listing_1.html">Razer</a></li>
+                <li><a href="listing_1.html">Nvidia</a></li>
+                <li><a href="listing_1.html">AMD</a></li>
+              </ul>
+            </div>
+          </li>
+          
+      </div>
+      
+      <div id="cart_menu" class="s_nav">
+        <a href="cart.html"><span class="s_icon"></span> <small class="s_text">Cart</small><span class="s_grand_total s_main_color">₽0.00</span></a>
+        <div class="s_submenu s_cart_holder">
+          <p class="s_mb_0">0 items</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- end of header -->
+  
+
+  <!-- ********************** --> 
+  <!--     I N T R O          -->
+  <!-- ********************** --> 
+
+  <div id="intro">
+    <div id="intro_wrap">
+      <div class="container_12">
+        <div id="breadcrumbs" class="grid_12">
+          <a href="">Главная</a>
+          &gt;
+          <a href="">Покупка</a>
+        </div>
+        <h1>Покупка</h1>
+      </div>
+    </div>
+  </div>
+  <!-- end of intro -->
+
+  
+  <!-- ********************** --> 
+  <!--      C O N T E N T     -->
+  <!-- ********************** --> 
+  <div id="content" class="container_12">
+
+    <div id="checkout" class="grid_12">
+    	<form id="checkout_form" class="s_accordion" action="orders.html">
+        <h2>Детали покупки</h2>
+        <div>
+          <div class="grid_6 alpha">
+            <h3><span class="s_secondary_color">Ваши</span> персональные данные</h3>
+            <div class="s_row_2 clearfix">
+              <label>Имя: *</label>
+              <input type="text" size="30" />
+            </div>
+            <div class="s_row_2 clearfix">
+              <label>Фамилия: *</label>
+              <input type="text" size="30" />
+            </div>
+            <div class="s_row_2 clearfix">
+              <label>E-Mail: *</label>
+              <input type="text" size="30" />
+            </div>
+            <div class="s_row_2 clearfix">
+              <label>Телефон: *</label>
+              <input type="text" size="30" />
+            </div>
+            <div class="s_row_2 s_mb_15 clearfix">
+              <label>факс:</label>
+              <input type="text" size="30" />
+            </div>
+          </div>
+          <div class="grid_6 omega">
+            <h3><span class="s_secondary_color">Ваш</span> Адрес</h3>
+            <div class="s_row_2 clearfix">
+              <label>Область:</label>
+              <input type="text" size="30" />
+            </div>
+            <div class="s_row_2 clearfix">
+              <label>Город: *</label>
+              <input type="text" size="30" class="required" title="Address 1 must be between 3 and 128 characters!" />
+            </div>
+            <div class="s_row_2 clearfix">
+              <label>Улица: *</label>
+              <input type="text" size="30" />
+            </div>
+            <div class="s_row_2 clearfix">
+              <label>Номер дома и кв.: *</label>
+              <input type="text" size="30" class="required" title="City must be between 3 and 128 characters!" />
+            </div>
+            <div class="s_row_2 clearfix">
+              <label id="postcode">Индекс: *</label>
+              <input type="text" size="30" class="required" title="Postcode must be between 2 and 10 characters for this country!" />
+            </div>
+          </div>
+          <div class="clear"></div>
+          <p><label><input type="checkbox" > Адрес доставки совпадает .</label></p>
+          <div class="clear"></div>
+          <a class="s_button_1 s_main_color_bgr"><span class="s_text">Step 2 &rsaquo;</span></a>
+          <span class="clear"></span>
+          <br />
+        </div>
+        <h2>Способ доставки</h2>
+       	<div>
+          <p>Пожалуйста выберите способ доставки товара.</p>
+          <div class="s_row_3 clearfix">
+            <label class="s_radio s_shipping_method clearfix" for="citylink.citylink">
+              <input type="radio" id="citylink.citylink" checked="checked" />
+              <span class="s_desc"><strong>Citylink</strong><br >Citylink  (вес: 0.00kg) - 300<span class="s_currency s_after"> rub</span></span>
+            </label>
+            <label class="s_radio s_shipping_method clearfix" for="flat.flat">
+              <input type="radio" id="flat.flat" />
+              <span class="s_desc"><strong>Почтой России</strong><br >Почта России - 0.0<span class="s_currency s_after"> rub</span></span>
+            </label>
+            <label class="s_radio s_shipping_method clearfix" for="free.free">
+              <input type="radio" id="free.free" />
+              <span class="s_desc"><strong>Бесплатная доставка</strong><br >Бесплатная доставка - 0.00<span class="s_currency s_after"> rub</span></span>
+            </label>
+            <label class="s_radio s_shipping_method clearfix" for="parcelforce_48.parcelforce_48">
+              <input type="radio" id="parcelforce_48.parcelforce_48" />
+              <span class="s_desc"><strong>Курьерская доставка</strong><br >Доставка до дома - 600<span class="s_currency s_after"> rub</span></span>
+            </label>
+            <label class="s_radio s_shipping_method clearfix" for="item.item">
+              <input type="radio" id="item.item" />
+              <span class="s_desc"><strong>Per Item</strong><br >Per Item Shipping Rate - 0.00<span class="s_currency s_after"> rub</span></span>
+            </label>
+          </div>
+          <div class="clear"></div>
+          <h3><span class="s_secondary_color">Комменарий</span> к покупке</h3>
+          <div class="s_row_3 clearfix">
+            <textarea rows="8" style="width: 99%;"></textarea>
+          </div>
+          <div class="s_row_3 clearfix">
+            <label class="s_checkbox"><input type="checkbox" /> Я прочитал(-ла) и принимаю условия магазина</label>
+          </div>
+          <div class="clear"></div>
+          <a class="s_button_1 s_ddd_bgr left"><span class="s_text">&lsaquo; Step 1</span></a>
+          <a class="s_button_1 s_main_color_bgr"><span class="s_text">Step 3 &rsaquo;</span></a>
+          <span class="clear"></span>
+          <br />
+        </div>
+        <h2 class="s_last">Способ оплаты</h2>
+       	<div class="s_last">
+          <p>Пожалуйста выберите способ оплаты товара.</p>
+          <div class="s_row_3 clearfix grid_7 alpha">
+            <label class="s_radio s_shipping_method clearfix">
+              <input type="radio" id="alertpay" checked="checked" />
+              <strong>Кридитная / Дебитовая карта карта (AlertPay)</strong>
+            </label>
+            <label class="s_radio s_shipping_method clearfix">
+              <input type="radio" id="authorizenet_aim" />
+              <strong>Сбербанк Онлайн</strong>
+            </label>
+            <label class="s_radio s_shipping_method clearfix">
+              <input type="radio" id="cod" />
+              <strong>Оплата PayPal</strong>
+            </label>
+          </div>
+          <div class="clear"></div>
+          <h3><span class="s_secondary_color">Комменарий</span> к покупке</h3>
+          <div class="s_row_3 clearfix">
+            <textarea rows="8" style="width: 99%;"></textarea>
+          </div>
+          <div class="s_row_3 clearfix">
+            <label class="s_checkbox"><input type="checkbox" /> Я прочитал(-ла) и принимаю условия магазина</label>
+          </div>
+          <div class="clear"></div>
+          <a class="s_button_1 s_ddd_bgr left"><span class="s_text">&lsaquo; Step 2</span></a>
+          <a class="s_button_1 s_main_color_bgr" onclick="$('#checkout_form').submit();"><span class="s_text">Купить</span></a>
+          <span class="clear"></span>
+          <br />
+        </div>
+      </form>
+    </div>
+   
+  </div>
+  <!-- end of content -->
+  
+  <!-- ********************** --> 
+  <!--   S H O P   I N F O    --> 
+  <!-- ********************** --> 
+  <div id="shop_info">
+    <div id="shop_info_wrap">
+      <div class="container_12">
+        <div id="shop_description" class="grid_3">
+          <h2>О магазине</h2>
+          <p>Наш магазин предоставляет вам самые лучшие товары по самым выгодным ценам. Ждём вас! </p>
+        </div>
+        <div id="shop_contacts" class="grid_3">
+          <h2>О нас</h2>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_phone_32"></span>863512200808 <br /></span></td>
+            </tr>
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_fax_32"></span>863512200808 <br /></span></td>
+            </tr>
+            <tr>
+              <td valign="middle"><span class="s_icon_32"><span class="s_icon s_mail_32"></span>CityLine@gmail.com</span></td>
+            </tr>
+            
+          </table>
+        </div>
+        <div id="VK" class="grid_3">
+          <h2>VK</h2>
+          <ul id="twitter_update_list">
+            <li>
+            
+          </li>
+        </ul>
+          <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script> 
+          <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/themeburn.json?callback=twitterCallback2&amp;count=2"></script> 
+        </div>
+        <div id="facebook" class="grid_3">
+          <h2>Instagram</h2>
+          <div class="s_widget_holder">
+            <fb:fan profileid="111188056908" stream="0" connections="6" logobar="0" width="220" css="http://svest.no-ip.org/test/opencart/catalog/view/theme/shoppica/stylesheet/facebook.css.php?300"></fb:fan>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end of shop info -->
+  
+  
+  
+  <!-- ********************** --> 
+  <!--      F O O T E R       --> 
+  <!-- ********************** --> 
+  <div id="footer" class="container_12">
+    
+      <div class="clear"></div>
+      <div class="grid_12 border_eee"></div>
+    </div>
+    <div id="payments" class="right clearfix">
+      <img src="images/payments/discover_straight_32px.png" alt="" />
+      <img src="images/payments/american_express_straight_32px.png" alt="" />
+      <img src="images/payments/moneybookers_straight_32px.png" alt="" />
+      <img src="images/payments/paypal_straight_32px.png" alt="" />
+      <img src="images/payments/visa_straight_32px.png" alt="" />
+      <img src="images/payments/american_express_straight_32px.png" alt="" />
+    
+  <!-- end of FOOTER --> 
+  
+</div>
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+  window.fbAsyncInit = function() {
+    FB.init({appId: '0c18007de6f00f7ecda8c040fb76cd90', status: true, cookie: true,
+     xfbml: true});
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+    '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+
+</body>
+</html>
